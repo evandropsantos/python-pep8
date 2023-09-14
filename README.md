@@ -35,4 +35,5 @@
 ```bash
     pip install flake8 # instalação
     flake8 main.py # execução
+    flake8 --install-hook git # git hook
 ```
