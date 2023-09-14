@@ -35,5 +35,13 @@
 ```bash
     pip install flake8 # instalação
     flake8 main.py # execução
-    flake8 --install-hook git # git hook
+```
+
+## Pre commit
+
+- [documentação](https://pre-commit.com/#intro)
+
+```bash
+    pip install pre-commit #intalação
+    pre-commit install # configuração
 ```
