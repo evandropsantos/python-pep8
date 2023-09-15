@@ -44,4 +44,5 @@
 ```bash
     pip install pre-commit #intalação
     pre-commit install # configuração
+    pre-commit run --all-files # run
 ```

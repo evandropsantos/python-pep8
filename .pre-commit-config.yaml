@@ -1,5 +1,5 @@
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v1.2.3
+-   repo: https://github.com/PyCQA/flake8
+    rev: 4.0.1
     hooks:
     -   id: flake8
