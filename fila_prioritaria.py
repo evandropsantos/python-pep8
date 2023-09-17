@@ -1,5 +1,3 @@
-from typing import Dict, List, Union
-
 from fila_base import FilaBase
 from constantes import CODIGO_PRIORITARIO
 
