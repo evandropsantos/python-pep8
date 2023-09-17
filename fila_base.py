@@ -1,7 +1,11 @@
 import abc
-from typing import List
+from typing import List, Union
 
 from constantes import TAMANHO_PADRAO_MAXIMO, TAMANHO_PADRAO_MINIMO
+from estatistica_detalhada import EstatisticaDetalhada
+from estatistica_resumida import EstatisticaResumida
+
+Classes = Union[EstatisticaResumida, EstatisticaDetalhada]
 
 
 class FilaBase(metaclass=abc.ABCMeta):
@@ -23,6 +27,9 @@ class FilaBase(metaclass=abc.ABCMeta):
         self.reseta_fila()
         self.gerar_senha_atual()
         self.inseri_cliente()
+
+    def estatistica(self, retorna_estatistica: Classes) -> dict:
+        return retorna_estatistica.roda_estatistica(self.clientes_atendidos)
 
     @abc.abstractmethod
     def chama_cliente(self, caixa: int) -> str:
